@@ -1,9 +1,9 @@
 import React from "react";
 import { render } from "react-dom";
-import { CSSVar } from "./components/CssVars";
+import { ArrayCardio } from "./components/ArrayCardio";
 
 const App = () => {
-  return <CSSVar />;
+  return <ArrayCardio />;
 };
 
 render(React.createElement(App), document.getElementById("root"));
