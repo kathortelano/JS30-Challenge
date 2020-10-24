@@ -1,9 +1,9 @@
 import React from "react";
 import { render } from "react-dom";
-import { ArrayCardio1 } from "./components/ArrayCardio1";
+import { FlexGallery } from "./components/FlexGallery";
 
 const App = () => {
-  return <ArrayCardio1 />;
+  return <FlexGallery />;
 };
 
 render(React.createElement(App), document.getElementById("root"));
