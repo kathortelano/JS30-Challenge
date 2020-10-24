@@ -62,27 +62,50 @@ const people = [
 // Array.prototype.filter()
 // 1. Filter the list of inventors for those who were born in the 1500's
 const fifteen = inventors.filter((inventor) => {
-  if (inventor.year < 1500) {
+  if (inventor.year > 1500 && inventor.year < 1600) {
     return inventor;
   }
 });
 
 // Array.prototype.map()
 // 2. Give us an array of the inventors first and last names
+const fullName = inventors.map((name) => {
+  return `${name.first} ${name.last}`;
+});
 
 // Array.prototype.sort()
 // 3. Sort the inventors by birthdate, oldest to youngest
-
+const oldYoung = inventors.sort(function (a, b) {
+  return a.year > b.year ? 1 : -1;
+});
+console.table(oldYoung);
 // Array.prototype.reduce()
 // 4. How many years did all the inventors live all together?
+const addAllYears = inventors.reduce((accumulator, yearLived) => {
+  const lived = yearLived.passed - yearLived.year;
+  return accumulator + lived;
+}, 0);
 
 // 5. Sort the inventors by years lived
-
+const mostLived = inventors.sort(function longLife(younger, older) {
+  return older.passed - older.year > younger.passed - younger.year ? 1 : -1;
+});
+console.table(mostLived);
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+// const container = document.querySelector(".mw-category");
+// const links = [...container.getElementsByTagName("a")];
+
+// links.map((link) => link.textContent).filter((street) => street.includes("de"));
 
 // 7. sort Exercise
 // Sort the people alphabetically by last name
+
+const alphabeticalSort = people.sort((a, b) => {
+  let afullName = a.split(", ");
+  let bfullName = b.split(", ");
+  return afullName[0] > bfullName[0] ? 1 : -1;
+});
 
 // 8. Reduce Exercise
 // Sum up the instances of each of these
@@ -103,6 +126,14 @@ const data = [
   "truck",
 ];
 
+const sumOfword = data.reduce((obj, item) => {
+  if (!obj[item]) {
+    obj[item] = 0;
+  }
+  obj[item]++;
+  return obj;
+}, {});
+
 export const ArrayCardio1 = () => {
-  return <h1>{JSON.stringify(fifteen)}</h1>;
+  return <h1>{JSON.stringify(sumOfword)}</h1>;
 };
