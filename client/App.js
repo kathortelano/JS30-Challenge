@@ -1,9 +1,9 @@
 import React from "react";
 import { render } from "react-dom";
-import { Ajax } from "./components/Ajax";
+import { ArrCardio2 } from "./components/ArrCardio2";
 
 const App = () => {
-  return <Ajax />;
+  return <ArrCardio2 />;
 };
 
 render(React.createElement(App), document.getElementById("root"));
