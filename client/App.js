@@ -1,9 +1,9 @@
 import React from "react";
 import { render } from "react-dom";
-import { FlexGallery } from "./components/FlexGallery";
+import { Ajax } from "./components/Ajax";
 
 const App = () => {
-  return <FlexGallery />;
+  return <Ajax />;
 };
 
 render(React.createElement(App), document.getElementById("root"));
