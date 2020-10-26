@@ -51,6 +51,7 @@ console.table(deleted);
 export const ArrCardio2 = () => {
   return (
     <div>
+      <h1> Array Cardio Exercise #2</h1>
       <h2>At least one person 19 or older?</h2>
       {isAdult ? "true" : "false"}
 

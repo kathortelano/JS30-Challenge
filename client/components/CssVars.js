@@ -10,7 +10,7 @@ export const CSSVar = () => {
   }
 
   return (
-    <div id="root">
+    <div className="container">
       <h2>
         Update CSS Variables with <span className="hl">JS</span>
       </h2>
@@ -60,5 +60,3 @@ export const CSSVar = () => {
     </div>
   );
 };
-
-export default CSSVar;

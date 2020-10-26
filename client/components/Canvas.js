@@ -7,14 +7,13 @@ export const Canvas = () => {
   const [event, setEvent] = useState(state.event);
   const [start, setStart] = useState({ x: state.x, y: state.y });
   const [end, setEnd] = useState({ x: state.x, y: state.y });
-  const [color, setColor] = useState();
 
   const canvasRef = useRef(null);
   const colorRef = useRef(null);
   const lineRef = useRef(null);
   //   const randomColor = Math.floor(Math.random() * 360);
 
-  const draw = (context, drawing, event, start, end) => {
+  function draw(context, drawing, event, start, end) {
     if (!drawing) return;
 
     context.strokeStyle = `${colorRef.current.value}`;
@@ -28,7 +27,7 @@ export const Canvas = () => {
     context.stroke();
 
     // [start.x, start.y] = [event.offsetX, event.offsetY];
-  };
+  }
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -38,12 +37,12 @@ export const Canvas = () => {
 
     canvasContext.lineJoin = "round";
     canvasContext.lineCap = "round";
-    setColor(false);
+
     draw(canvasContext, drawing, event, start, end);
   });
 
   return (
-    <>
+    <div>
       <h2 className="title">Fun with HTML canvas</h2>
       <div className="controls">
         <label htmlFor="color">Color</label>
@@ -107,6 +106,6 @@ export const Canvas = () => {
           setDraw(false);
         }}
       ></canvas>
-    </>
+    </div>
   );
 };

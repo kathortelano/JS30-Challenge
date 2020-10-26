@@ -4,8 +4,19 @@
     --blur: 10px;
 }
 
-body {
+
+/* body {
+   
+    background: #193549;
+    color: white;
+    font-family: "helvetica neue", sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+} */
+
+.container {
     text-align: center;
+    height: 100vh;
     background: #193549;
     color: white;
     font-family: "helvetica neue", sans-serif;
@@ -21,7 +32,7 @@ input.setting {
     width: 100px;
 }
 
-img {
+img.image {
     padding: var(--spacing);
     background-color: var(--base);
     filter: blur(var(--blur));
