@@ -1,15 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC");
-html {
+
+/* html {
     box-sizing: border-box;
     background: #ffc600;
     font-family: "helvetica neue";
     font-size: 20px;
     font-weight: 200;
-}
+} */
 
-body {
+
+/* body {
     margin: 0;
-}
+} */
 
 *,
 *:before,
@@ -102,7 +104,7 @@ body {
     font-size: 4em;
 }
 
-.panel.open {
+.panel:hover {
     font-size: 40px;
     flex: 5;
 }

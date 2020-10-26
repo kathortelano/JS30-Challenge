@@ -78,7 +78,7 @@ const fullName = inventors.map((name) => {
 const oldYoung = inventors.sort(function (a, b) {
   return a.year > b.year ? 1 : -1;
 });
-console.table(oldYoung);
+
 // Array.prototype.reduce()
 // 4. How many years did all the inventors live all together?
 const addAllYears = inventors.reduce((accumulator, yearLived) => {
@@ -134,6 +134,23 @@ const sumOfword = data.reduce((obj, item) => {
   return obj;
 }, {});
 
+const stringThem = [
+  fullName,
+  fifteen,
+  oldYoung,
+  addAllYears,
+  mostLived,
+  alphabeticalSort,
+  sumOfword,
+];
+
 export const ArrayCardio1 = () => {
-  return <h1>{JSON.stringify(sumOfword)}</h1>;
+  return (
+    <div>
+      <h1>Array Cardio Exercise #1</h1>
+      {stringThem.map((value, i) => (
+        <li key={i}>{JSON.stringify(value)}</li>
+      ))}
+    </div>
+  );
 };
