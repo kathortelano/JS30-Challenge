@@ -1,9 +1,9 @@
 import React from "react";
 import { render } from "react-dom";
-import { ArrCardio2 } from "./components/ArrCardio2";
+import { Canvas } from "./components/Canvas";
 
 const App = () => {
-  return <ArrCardio2 />;
+  return <Canvas />;
 };
 
 render(React.createElement(App), document.getElementById("root"));
