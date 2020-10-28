@@ -5,8 +5,10 @@ import { ArrCardio2 } from "./ArrCardio2";
 import { CSSVar } from "./CssVars";
 import { FlexGallery } from "./FlexGallery";
 import { DevTools } from "./DevTools";
+import { ShiftSelect } from "./ShiftSelect";
 
 export {
+  ShiftSelect,
   Ajax,
   Canvas,
   ArrayCardio1,
