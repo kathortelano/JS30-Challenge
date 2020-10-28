@@ -8,6 +8,7 @@ import {
   CSSVar,
   FlexGallery,
   DevTools,
+  ShiftSelect,
 } from "./components/index.js";
 
 const Nav = () => {
@@ -33,6 +34,9 @@ const Nav = () => {
       </li>
       <li>
         <Link to="/dev-tools">Dev Tools</Link>
+      </li>
+      <li>
+        <Link to="/shift-select">Shift Select</Link>
       </li>
     </ul>
   );
@@ -74,6 +78,9 @@ const App = () => {
           </Route>
           <Route path="/dev-tools">
             <DevTools />
+          </Route>
+          <Route path="/shift-select">
+            <ShiftSelect />
           </Route>
         </Switch>
       </div>
