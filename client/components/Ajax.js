@@ -1,44 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import "../styles/Ajax.css";
 
-// const Display = ({ data, search }) => {
-//   //   function handleMatch(wordMatch, cities) {
-//   //     const regex = new RegExp(wordMatch, "gi");
-
-//   //     return cities.filter((place) => {
-//   //       return place.city.match(regex) || place.state.match(regex);
-//   //     });
-//   //   }
-
-//   //   function handleDisplay(e) {
-//   //     const matched = handleMatch(e.target.value, cities);
-//   //     const display = document.querySelector(".suggestions");
-
-//   //     const html = matched
-//   //       .map((place) => {
-//   //         const regex = new RegExp(e.target.value, "gi");
-//   //         const cityName = place.city.replace(
-//   //           regex,
-//   //           `<span class='hl'>${e.target.value}</span>`
-//   //         );
-
-//   //         const stateName = place.state.replace(
-//   //           regex,
-//   //           `<span class='hl'>${e.target.value}</span>`
-//   //         );
-
-//   //         return `
-//   //         <li>
-//   //         <span class='name'>${cityName} ${stateName}</span>
-//   //         <span class='population'>${place.population}</span>
-//   //         </li>`;
-//   //       })
-//   //       .join("");
-
-//   //     display.innerHTML = html;
-//   //   }
-
-// }
 const endpoint =
   "https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json";
 

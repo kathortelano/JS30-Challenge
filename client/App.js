@@ -7,6 +7,7 @@ import {
   ArrCardio2,
   CSSVar,
   FlexGallery,
+  DevTools,
 } from "./components/index.js";
 
 const Nav = () => {
@@ -29,6 +30,9 @@ const Nav = () => {
       </li>
       <li>
         <Link to="/css-var">CSS Variables</Link>
+      </li>
+      <li>
+        <Link to="/dev-tools">Dev Tools</Link>
       </li>
     </ul>
   );
@@ -67,6 +71,9 @@ const App = () => {
           </Route>
           <Route path="/css-var">
             <CSSVar />
+          </Route>
+          <Route path="/dev-tools">
+            <DevTools />
           </Route>
         </Switch>
       </div>

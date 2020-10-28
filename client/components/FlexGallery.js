@@ -18,9 +18,9 @@ export const FlexGallery = () => {
   useEffect(() => {
     const panels = document.querySelectorAll(".panel");
 
-    // panels.forEach((panel) => {
-    //   panel.addEventListener("onmouseover", handleOpen);
-    // });
+    panels.forEach((panel) => {
+      panel.addEventListener("click", handleOpen);
+    });
 
     panels.forEach((panel) => {
       panel.addEventListener("transitionend", handleActive);
