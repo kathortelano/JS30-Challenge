@@ -9,6 +9,7 @@ import {
   FlexGallery,
   DevTools,
   ShiftSelect,
+  VideoPlayer,
 } from "./components/index.js";
 
 const Nav = () => {
@@ -37,6 +38,9 @@ const Nav = () => {
       </li>
       <li>
         <Link to="/shift-select">Shift Select</Link>
+      </li>
+      <li>
+        <Link to="/video-player">Custom Video Player</Link>
       </li>
     </ul>
   );
@@ -81,6 +85,9 @@ const App = () => {
           </Route>
           <Route path="/shift-select">
             <ShiftSelect />
+          </Route>
+          <Route path="/video-player">
+            <VideoPlayer />
           </Route>
         </Switch>
       </div>
