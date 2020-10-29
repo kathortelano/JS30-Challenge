@@ -6,6 +6,7 @@ import { CSSVar } from "./CssVars";
 import { FlexGallery } from "./FlexGallery";
 import { DevTools } from "./DevTools";
 import { ShiftSelect } from "./ShiftSelect";
+import { VideoPlayer } from "./VideoPlayer";
 
 export {
   ShiftSelect,
@@ -16,4 +17,5 @@ export {
   CSSVar,
   FlexGallery,
   DevTools,
+  VideoPlayer,
 };
