@@ -1,10 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
 import "../styles/VideoPlayer.css";
 import { FaPlay, FaPause } from "react-icons/fa";
-<<<<<<< HEAD
+
 import { RiFullscreenFill } from "react-icons/ri";
-=======
->>>>>>> day 11 completed: converted tutorial lessons from plain js to react js
+
 //get elements
 //build functions
 //hook event listenrs
@@ -15,10 +14,7 @@ export const VideoPlayer = () => {
   const [scrubProgress, setScrubProgress] = useState();
   const [playbackRate, setPlaybackRate] = useState(1);
   const [volume, setVolume] = useState(1);
-<<<<<<< HEAD
 
-=======
->>>>>>> day 11 completed: converted tutorial lessons from plain js to react js
   const [progress, setProgress] = useState(0);
   const videoRef = useRef(null);
   const progressRef = useRef(null);
@@ -58,7 +54,6 @@ export const VideoPlayer = () => {
     video.currentTime = scrubTime;
   }
 
-<<<<<<< HEAD
   function handleFullScreen() {
     if (!document.fullscreenElement) {
       video.requestFullscreen();
@@ -68,11 +63,6 @@ export const VideoPlayer = () => {
     setVideo(videoRef.current);
     setScrubProgress(progressRef.current);
     console.log(videoRef);
-=======
-  useEffect(() => {
-    setVideo(videoRef.current);
-    setScrubProgress(progressRef.current);
->>>>>>> day 11 completed: converted tutorial lessons from plain js to react js
   });
 
   return (
@@ -82,11 +72,7 @@ export const VideoPlayer = () => {
           ref={videoRef}
           onClick={togglePlay}
           onTimeUpdate={handleProgress}
-<<<<<<< HEAD
-          className={`player__video viewer `}
-=======
           className="player__video viewer"
->>>>>>> day 11 completed: converted tutorial lessons from plain js to react js
           src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
         ></video>
 
@@ -142,12 +128,10 @@ export const VideoPlayer = () => {
           >
             25s »
           </button>
-<<<<<<< HEAD
+
           <button className="player__button" onClick={handleFullScreen}>
             <RiFullscreenFill />
           </button>
-=======
->>>>>>> day 11 completed: converted tutorial lessons from plain js to react js
         </div>
       </div>
     </div>
