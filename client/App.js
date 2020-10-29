@@ -10,6 +10,7 @@ import {
   DevTools,
   ShiftSelect,
   VideoPlayer,
+  Konami,
 } from "./components/index.js";
 
 const Nav = () => {
@@ -18,9 +19,7 @@ const Nav = () => {
       <li>
         <Link to="/">Home</Link>
       </li>
-      <li>
-        <Link to="/flex-gallery">Flex Gallery</Link>
-      </li>
+
       <li>
         <Link to="/canvas">Canvas</Link>
       </li>
@@ -34,6 +33,9 @@ const Nav = () => {
         <Link to="/css-var">CSS Variables</Link>
       </li>
       <li>
+        <Link to="/flex-gallery">Flex Gallery</Link>
+      </li>
+      <li>
         <Link to="/dev-tools">Dev Tools</Link>
       </li>
       <li>
@@ -41,6 +43,9 @@ const Nav = () => {
       </li>
       <li>
         <Link to="/video-player">Custom Video Player</Link>
+      </li>
+      <li>
+        <Link to="/konami">Konami</Link>
       </li>
     </ul>
   );
@@ -88,6 +93,9 @@ const App = () => {
           </Route>
           <Route path="/video-player">
             <VideoPlayer />
+          </Route>
+          <Route path="/konami">
+            <Konami />
           </Route>
         </Switch>
       </div>

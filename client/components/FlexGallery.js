@@ -1,5 +1,6 @@
 import "../styles/FlexGallery.css";
 import React, { useEffect, useState } from "react";
+import { secretCode } from "./Konami";
 
 export const FlexGallery = () => {
   function handleOpen() {
@@ -45,7 +46,7 @@ export const FlexGallery = () => {
         <p>Today</p>
       </div>
       <div className="panel panel4">
-        <p>Give</p>
+        <p style={{ fontFamily: "monospace" }}>{secretCode}</p>
         <p>All</p>
         <p>You can</p>
       </div>
