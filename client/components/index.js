@@ -7,8 +7,10 @@ import { FlexGallery } from "./FlexGallery";
 import { DevTools } from "./DevTools";
 import { ShiftSelect } from "./ShiftSelect";
 import { VideoPlayer } from "./VideoPlayer";
+import { Konami } from "./Konami";
 
 export {
+  Konami,
   ShiftSelect,
   Ajax,
   Canvas,

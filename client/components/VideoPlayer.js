@@ -62,7 +62,6 @@ export const VideoPlayer = () => {
   useEffect(() => {
     setVideo(videoRef.current);
     setScrubProgress(progressRef.current);
-    console.log(videoRef);
   });
 
   return (
