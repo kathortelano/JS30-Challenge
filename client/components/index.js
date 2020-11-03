@@ -8,6 +8,8 @@ import { DevTools } from "./DevTools";
 import { ShiftSelect } from "./ShiftSelect";
 import { VideoPlayer } from "./VideoPlayer";
 import { Konami } from "./Konami";
+import { Practice } from "./Practice";
+import { SlideScroll } from "./SlideScroll";
 
 export {
   Konami,
@@ -20,4 +22,6 @@ export {
   FlexGallery,
   DevTools,
   VideoPlayer,
+  Practice,
+  SlideScroll,
 };

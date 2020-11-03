@@ -11,6 +11,8 @@ import {
   ShiftSelect,
   VideoPlayer,
   Konami,
+  Practice,
+  SlideScroll,
 } from "./components/index.js";
 
 const Nav = () => {
@@ -18,6 +20,12 @@ const Nav = () => {
     <ul>
       <li>
         <Link to="/">Home</Link>
+      </li>
+      <li>
+        <Link to="/practice">YDKJS yet practice</Link>
+      </li>
+      <li>
+        <Link to="/slide-scroll">Slide in on Scroll</Link>
       </li>
 
       <li>
@@ -65,6 +73,12 @@ const App = () => {
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route path="/practice">
+            <Practice />
+          </Route>
+          <Route path="/slide-scroll">
+            <SlideScroll />
           </Route>
           <Route path="/ajax">
             <Ajax />
