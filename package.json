@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "parcel ./client/index.html",
+        "dev": "parcel ./index.html",
         "lint": "eslint ./client --quiet",
         "format": "prettier ./client --write",
         "test": "echo \"Error: no test specified\" && exit 1"
