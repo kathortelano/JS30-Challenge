@@ -43,21 +43,21 @@ export const Canvas = () => {
 
   return (
     <div>
-      <h2 className="title">Fun with HTML canvas</h2>
-      <div className="controls">
+      <h2 className="cavas-title">Fun with HTML canvas</h2>
+      <div className="cavas-controls">
         <label htmlFor="color">Color</label>
         <input
           type="color"
           name="color"
           ref={colorRef}
-          className="control color"
+          className="cavas-control color"
         />
         <label htmlFor="line">Line Width</label>
         <input
           type="range"
           name="line"
           ref={lineRef}
-          className="control line"
+          className="cavas-control line"
         />
       </div>
 

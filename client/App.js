@@ -13,6 +13,7 @@ import {
   Konami,
   Practice,
   SlideScroll,
+  LocalStorage,
 } from "./components/index.js";
 
 const Nav = () => {
@@ -20,6 +21,9 @@ const Nav = () => {
     <ul>
       <li>
         <Link to="/">Home</Link>
+      </li>
+      <li>
+        <Link to="/local-storage">Local Storage</Link>
       </li>
       <li>
         <Link to="/practice">YDKJS yet practice</Link>
@@ -76,6 +80,9 @@ const App = () => {
           </Route>
           <Route path="/practice">
             <Practice />
+          </Route>
+          <Route path="/local-storage">
+            <LocalStorage />
           </Route>
           <Route path="/slide-scroll">
             <SlideScroll />

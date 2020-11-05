@@ -1,17 +1,27 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 // import { render } from "react-dom";
 // import { Redirect } from "react-router-dom";
-import * as Components from "./index.js";
+// import * as Components from "./index.js";
 
 export const secretCode = "tickleme";
 
 const Activated = () => {
-  const comps = [...Object.keys(Components)];
-  const random = comps[Math.floor(Math.random() * comps.length)];
+  const [color, setColor] = useState("");
+  const handleClick = () => {
+    setColor(
+      `#${(0x1000000 + Math.random() * 0xffffff).toString(16).substr(1, 6)}`
+    );
+  };
 
-  const element = Components[random]();
-
-  return <div>{element}</div>;
+  return (
+    <div
+      onClick={handleClick}
+      style={{ backgroundColor: `${color}`, height: "100vh", width: "100vw" }}
+    >
+      <h1 style={{ textAlign: "center" }}>YOU ACTIVATED MY SECRET CODE!</h1>
+      <p> start clicking!</p>
+    </div>
+  );
 };
 
 export const Konami = () => {
@@ -52,6 +62,8 @@ export const Konami = () => {
       setKonami(false);
     }
   }
+
+  useEffect(() => {});
 
   return (
     <div>

@@ -4,17 +4,17 @@ body {
     overflow: none;
 } */
 
-.title {
+.cavas-title {
     text-align: center;
-    font-size: 5rem;
+    font-size: 2rem;
 }
 
-.controls {
+.canvas-control {
     display: flex;
     justify-content: space-around;
     margin: 0rem 42rem;
 }
 
-.controls>label {
+.canvas-control>label {
     font-size: 2rem;
 }
