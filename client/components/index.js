@@ -10,7 +10,7 @@ import { VideoPlayer } from "./VideoPlayer";
 import { Konami } from "./Konami";
 import { Practice } from "./Practice";
 import { SlideScroll } from "./SlideScroll";
-
+import { LocalStorage } from "./LocalStorage";
 export {
   Konami,
   ShiftSelect,
@@ -24,4 +24,5 @@ export {
   VideoPlayer,
   Practice,
   SlideScroll,
+  LocalStorage,
 };

@@ -10,7 +10,7 @@ export const CSSVar = () => {
   }
 
   return (
-    <div className="container">
+    <div className="var-container">
       <h2>
         Update CSS Variables with <span className="hl">JS</span>
       </h2>
