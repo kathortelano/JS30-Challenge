@@ -11,6 +11,7 @@ import { Konami } from "./Konami";
 import { Practice } from "./Practice";
 import { SlideScroll } from "./SlideScroll";
 import { LocalStorage } from "./LocalStorage";
+import { TextShadow } from "./TextShadow";
 export {
   Konami,
   ShiftSelect,
@@ -25,4 +26,5 @@ export {
   Practice,
   SlideScroll,
   LocalStorage,
+  TextShadow,
 };
