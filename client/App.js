@@ -14,6 +14,7 @@ import {
   Practice,
   SlideScroll,
   LocalStorage,
+  TextShadow,
 } from "./components/index.js";
 
 const Nav = () => {
@@ -24,6 +25,9 @@ const Nav = () => {
       </li>
       <li>
         <Link to="/local-storage">Local Storage</Link>
+      </li>
+      <li>
+        <Link to="/text-shadow">Text Shadow Effect</Link>
       </li>
       <li>
         <Link to="/practice">YDKJS yet practice</Link>
@@ -80,6 +84,9 @@ const App = () => {
           </Route>
           <Route path="/practice">
             <Practice />
+          </Route>
+          <Route path="/text-shadow">
+            <TextShadow />
           </Route>
           <Route path="/local-storage">
             <LocalStorage />
