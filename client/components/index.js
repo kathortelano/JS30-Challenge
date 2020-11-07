@@ -12,6 +12,9 @@ import { Practice } from "./Practice";
 import { SlideScroll } from "./SlideScroll";
 import { LocalStorage } from "./LocalStorage";
 import { TextShadow } from "./TextShadow";
+import { SortBands } from "./SortBands";
+import { ReduceTime } from "./ReduceTime";
+
 export {
   Konami,
   ShiftSelect,
@@ -27,4 +30,6 @@ export {
   SlideScroll,
   LocalStorage,
   TextShadow,
+  SortBands,
+  ReduceTime,
 };

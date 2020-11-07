@@ -15,6 +15,8 @@ import {
   SlideScroll,
   LocalStorage,
   TextShadow,
+  SortBands,
+  ReduceTime,
 } from "./components/index.js";
 
 const Nav = () => {
@@ -22,6 +24,9 @@ const Nav = () => {
     <ul>
       <li>
         <Link to="/">Home</Link>
+      </li>
+      <li>
+        <Link to="/reduce-time">Collect times</Link>
       </li>
       <li>
         <Link to="/local-storage">Local Storage</Link>
@@ -63,6 +68,9 @@ const Nav = () => {
       <li>
         <Link to="/konami">Konami</Link>
       </li>
+      <li>
+        <Link to="/sort-bands">Sorted Bands</Link>
+      </li>
     </ul>
   );
 };
@@ -82,6 +90,9 @@ const App = () => {
           <Route exact path="/">
             <Home />
           </Route>
+          <Route path="/reduce-time">
+            <ReduceTime />
+          </Route>
           <Route path="/practice">
             <Practice />
           </Route>
@@ -97,8 +108,8 @@ const App = () => {
           <Route path="/ajax">
             <Ajax />
           </Route>
-          <Route path="/canvas">
-            <Canvas />
+          <Route path="/sort-bands">
+            <SortBands />
           </Route>
           <Route path="/flex-gallery">
             <FlexGallery />
