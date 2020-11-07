@@ -15,6 +15,7 @@ import {
   SlideScroll,
   LocalStorage,
   TextShadow,
+  SortBands,
 } from "./components/index.js";
 
 const Nav = () => {
@@ -63,6 +64,9 @@ const Nav = () => {
       <li>
         <Link to="/konami">Konami</Link>
       </li>
+      <li>
+        <Link to="/sort-bands">Sorted Bands</Link>
+      </li>
     </ul>
   );
 };
@@ -97,8 +101,8 @@ const App = () => {
           <Route path="/ajax">
             <Ajax />
           </Route>
-          <Route path="/canvas">
-            <Canvas />
+          <Route path="/sort-bands">
+            <SortBands />
           </Route>
           <Route path="/flex-gallery">
             <FlexGallery />
