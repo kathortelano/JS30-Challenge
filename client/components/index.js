@@ -13,6 +13,7 @@ import { SlideScroll } from "./SlideScroll";
 import { LocalStorage } from "./LocalStorage";
 import { TextShadow } from "./TextShadow";
 import { SortBands } from "./SortBands";
+import { ReduceTime } from "./ReduceTime";
 
 export {
   Konami,
@@ -30,4 +31,5 @@ export {
   LocalStorage,
   TextShadow,
   SortBands,
+  ReduceTime,
 };

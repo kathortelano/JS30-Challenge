@@ -16,6 +16,7 @@ import {
   LocalStorage,
   TextShadow,
   SortBands,
+  ReduceTime,
 } from "./components/index.js";
 
 const Nav = () => {
@@ -23,6 +24,9 @@ const Nav = () => {
     <ul>
       <li>
         <Link to="/">Home</Link>
+      </li>
+      <li>
+        <Link to="/reduce-time">Collect times</Link>
       </li>
       <li>
         <Link to="/local-storage">Local Storage</Link>
@@ -85,6 +89,9 @@ const App = () => {
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route path="/reduce-time">
+            <ReduceTime />
           </Route>
           <Route path="/practice">
             <Practice />
