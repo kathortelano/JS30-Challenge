@@ -17,6 +17,7 @@ import {
   TextShadow,
   SortBands,
   ReduceTime,
+  Webcam,
 } from "./components/index.js";
 
 const Nav = () => {
@@ -24,6 +25,9 @@ const Nav = () => {
     <ul>
       <li>
         <Link to="/">Home</Link>
+      </li>
+      <li>
+        <Link to="/webcam">Webcam Fun</Link>
       </li>
       <li>
         <Link to="/reduce-time">Collect times</Link>
@@ -89,6 +93,9 @@ const App = () => {
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route path="/webcam">
+            <Webcam />
           </Route>
           <Route path="/reduce-time">
             <ReduceTime />

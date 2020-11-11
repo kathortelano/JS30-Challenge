@@ -14,7 +14,7 @@ import { LocalStorage } from "./LocalStorage";
 import { TextShadow } from "./TextShadow";
 import { SortBands } from "./SortBands";
 import { ReduceTime } from "./ReduceTime";
-
+import { Webcam } from "./Webcam";
 export {
   Konami,
   ShiftSelect,
@@ -32,4 +32,5 @@ export {
   TextShadow,
   SortBands,
   ReduceTime,
+  Webcam,
 };
